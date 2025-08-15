@@ -12,7 +12,7 @@ function App() {
     setDownloadUrl("");
 
     try {
-      const res = await fetch("http://localhost:8000/generate-drawing", {
+      const res = await fetch("https://oryvo.onrender.com/generate-drawing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),

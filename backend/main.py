@@ -14,7 +14,8 @@ app = FastAPI()
 # 🌐 Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000",
+                   "https://oryvo-pearl.vercel.app" ], # Vercel frontend],
     allow_methods=["*"],
     allow_headers=["*"],
 )
