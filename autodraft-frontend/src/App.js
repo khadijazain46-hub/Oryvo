@@ -21,7 +21,7 @@ function App() {
       const data = await res.json();
 
       if (res.ok && data.file) {
-        setDownloadUrl(`http://localhost:8000${data.file}`);
+        setDownloadUrl(`https://oryvo.onrender.com${data.file}`);
       } else {
         alert("Error generating drawing.");
       }
